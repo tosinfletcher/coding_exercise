@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block content %}
+<h1 align="center"> This is the DevOps Exercise Home page</h1><br><br>
+<h3 align="center"> User's ID = {{ user.id }}</h3>
+<h3 align="center"> User's Name = {{ user.name }}</h3>
+<h3 align="center"> User's Email = {{ user.email }}</h3>
+<h3 align="center"> User's Last Login = {{ user.last_login }}</h3>
+{% endblock %}
+
+

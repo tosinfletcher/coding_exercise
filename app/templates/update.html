@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Update Account
+{% endblock %}
+
+{% block content %}
+<form method="POST">
+    <h3 align="center">Update</h3>
+    <div class="form-group">
+        <label for ="email">Old Email:</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter old email"/>
+    </div>
+    <div class="form-group">
+        <label for ="email_u1">New Email:</label>
+        <input type="email" class="form-control" id="email_u1" name="email_u1" placeholder="Enter new email"/>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
