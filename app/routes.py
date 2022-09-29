@@ -48,7 +48,7 @@ def sign_up():
             # Once the user's account has been successfully created use the flash function to display a notification on the screen
             flash('Your Account has been created!', category='success')
             # Redirect the user to the login screen to login into their newly created account
-            return redirect(url_for('login'))
+            return redirect(url_for('index'))
     # serve the signup html page to the user when they access the signup endpoint
     return render_template('signup.html', user=current_user)
 
@@ -82,7 +82,7 @@ def login():
                 flash('Incorrect password, try again.', category='error')
         else:
             # Notifies the user that the provided email address does not exist in the database
-            flash('Email does not exist.', category='error')
+            flash('Account does not exist!!!... Click Sign Up to register for an account', category='error')
     # Render the login html page to the current user.
     return render_template("login.html", user=current_user)
 
