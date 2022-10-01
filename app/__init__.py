@@ -19,7 +19,7 @@ from app import routes
 
 # This function creates a database if it doesn't already exist
 def create_database(app):
-    if not path.exists('webservice/user.db'):
+    if not path.exists('coding_exercise/app/user.db'):
         db.create_all(app=app)
         print('Created Database!')
 
